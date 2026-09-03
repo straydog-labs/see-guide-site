@@ -57,6 +57,7 @@ h1{font-size:38px; line-height:1.15; margin:0 0 14px; letter-spacing:-.01em;}
 /* Landing cards */
 .card-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:40px 0;}
 @media (max-width:680px){.card-grid{grid-template-columns:1fr;}}
+.card-grid.single{grid-template-columns:1fr; max-width:420px;}
 .big-card{
   display:block; text-decoration:none; color:inherit;
   background:var(--surface); border:1px solid var(--border); border-radius:var(--r-xl);
