@@ -20,7 +20,7 @@
   <div class="hero" style="padding-top:40px;">
     <p class="crumbs">Coach</p>
     <h1>Using SEE as a coach.</h1>
-    <p class="lede">Every athlete you're linked to feeds real data into your dashboard — not a survey they fill out once, but what they actually logged after every climb. This guide covers the four things you'll use most: your roster, the two per-athlete insight panels, and logging a climb yourself, live at the wall.</p>
+    <p class="lede">Every athlete you're linked to feeds real data into your dashboard — not a survey they fill out once, but what they actually logged after every climb. This guide covers what you'll use most: your roster, the three per-athlete insight panels, logging a climb yourself live at the wall, and assigning workouts.</p>
     <nav class="toc">
       <a href="#roster">The roster</a>
       <a href="#progress">Progress Over Time</a>
@@ -34,13 +34,13 @@
   <div class="section" id="roster">
     <p class="step-num">Start here</p>
     <h2>The roster</h2>
-    <p class="dek">Athletes linked to you. Tap any athlete for their assignments, session notes, and chat — this is home base for the whole dashboard.</p>
+    <p class="dek">Athletes linked to you. Tap any athlete to open their detail view — Progress, Gap, and Projects panels are front and center, with their assignments, session notes, and chat below.</p>
     <div class="shot wide"><img src="assets/coach-roster.png" alt="SEE coach roster showing team stats, zone mix, and a list of linked athletes"></div>
     <ol class="steps">
-      <li>The top strip is your whole team at a glance: athlete count, total logged sessions, team-wide Learning % and send rate, and how many athletes are currently <b>flagged</b> — a real, threshold-based flag (repeated panic-zone sessions in a short window), not a guess.</li>
-      <li>Each row shows that athlete's own zone-mix bar and, when it applies, a specific flag like <b>"4 panic sessions this week"</b> — nothing shown for an athlete with nothing to flag.</li>
+      <li>The top strip is your whole team at a glance: athlete count, total logged sessions, team-wide Learning % and send rate, and how many athletes are currently <b>flagged</b> — a real, threshold-based flag (3 or more panic-zone sessions in a rolling 7 days), not a guess.</li>
+      <li>Each row shows that athlete's own zone-mix bar and, when it applies, a specific flag like <b>"3 panic sessions this week"</b> — nothing shown for an athlete with nothing to flag.</li>
       <li>To link a new athlete, use the <b>Link athlete</b> field at the bottom of the roster with their email — they'll need to already have a SEE account.</li>
-      <li>Tap an athlete's name to open their detail view, where the Progress and Gap panels below live.</li>
+      <li>Tap an athlete's name to open their detail view: Progress, Gap, and Projects panels first, with assignments, session notes, and chat below.</li>
     </ol>
   </div>
 
@@ -52,7 +52,7 @@
     <div class="shot wide"><img src="assets/coach-progress-panel.png" alt="SEE Progress Over Time panel showing weekly zone share and grade-by-terrain charts"></div>
     <ol class="steps">
       <li><b>Zone share (%)</b> shows how the Comfort/Learning/Panic mix has shifted week to week — a steady climb in Learning share generally reads as healthy pressure; a rising Panic share on its own is worth a direct conversation.</li>
-      <li><b>Grade progression is split into two panels — Bouldering and Roped climbing</b> — each on its own axis (V-scale for one, YDS/French/British/E-grade for the other), so a boulderer's V-grades and a route climber's letter grades never get averaged into one meaningless number. Each plots separately per terrain type, so you can see technique gains a blended number would hide — e.g. steady gains on Vertical while Overhang stalls.</li>
+      <li><b>Grade progression is split into two panels — Bouldering and Roped climbing.</b> Bouldering plots on the V-scale; Roped plots on whichever single system — YDS, French, British, or E-grade — is that athlete's own dominant one, so a boulderer's V-grades and a route climber's letter grades never get averaged into one meaningless number. Sessions logged in a different roped system than the athlete's usual one are left off the Roped chart, with a note showing how many were excluded. Each plots separately per terrain type, so you can see technique gains a blended number would hide — e.g. steady gains on Vertical while Overhang stalls.</li>
       <li>The <b>Roped climbing</b> panel has a filter — <b>All / Lead / Top Rope / Auto Belay</b> — so you can isolate exactly how an athlete performs under one style, or spot a real gap between them (an athlete who climbs a full letter grade harder on Top Rope than on Lead is a concrete, common pattern worth a direct conversation, not a guess).</li>
       <li>This panel is explicitly descriptive, not diagnostic — it's the same underlying logs as the gap panel below, just sliced by calendar week instead of by terrain. They're not meant to produce matching numbers.</li>
     </ol>
@@ -99,9 +99,9 @@
   <div class="section" id="assign">
     <p class="step-num">Programming</p>
     <h2>Assigning a workout</h2>
-    <p class="dek">The <b>New assignment</b> button next to any athlete on the roster (see the roster screenshot above) opens the assign wizard — search your workout library or an athlete's own custom workouts, set a due date, and it lands directly in their Home screen's "Due this week" list.</p>
+    <p class="dek">The <b>New assignment</b> button next to any athlete on the roster (see the roster screenshot above) opens the assign wizard — search the shared workout library or your own custom-built workouts, optionally set a due date, and it lands in their Home screen's "Due this week" list once it's due within 7 days (or overdue).</p>
     <ol class="steps">
-      <li>You can assign something from the shared workout library, one of your own custom-built workouts, or write a fully freeform assignment with no linked workout at all.</li>
+      <li>You can assign something from the shared workout library or one of your own custom-built workouts — every assignment links to a real workout, there's no fully freeform option.</li>
       <li>Assignments with a linked workout get a real <b>Start session</b> button on the athlete's end, which opens the actual session builder pre-filled — not just a checkbox.</li>
       <li>Marking an assignment complete is a separate action from the athlete logging reps — completing the assignment and actually doing the work are tracked independently, on purpose.</li>
     </ol>
